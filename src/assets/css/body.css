@@ -1,24 +1,44 @@
-body {
-    min-height: 400vh;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Condensed&display=swap');
+@import url(vars.css);
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+body {
+    background-color: #445;
+    font-family:var(--primary-font);
+}
+/*estilos de la barra de navegacion */
+::-webkit-scrollbar {
+    width: 11px;
+  }
 
+  ::-webkit-scrollbar-track {
+    background: #445;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 21px;
+  }
 /*boton para volver ir a la parte
 superior de la pagina*/
 .scrollTop{
 position: fixed;
 bottom: 20px;
 right: 20px;
-background-color: blue;
+background-color: rgb(209, 27, 27);
 color: #fff;
-border-radius:20px ;
+border-radius:50% ;
 border: none;
-width: 40px;
-height: 40px;
+width: 80px;
+height: 80px;
 padding: 4px;
 display: flex;
 justify-content: center;
 align-items: center;
 }
 .scrollTop:hover{
-    background-color: rgb(25, 0, 255);
+    background-color: rgb(15, 77, 7);
 }
