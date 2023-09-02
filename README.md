@@ -14,6 +14,7 @@ Currently, two official plugins are available:
 
 The react-router-dom package contains bindings for using React Router in web applications. 
 Please see the Getting Started guide for more information on how to get started with React Router.
+https://www.npmjs.com/package/react-router-dom
 
 how to install?
 npm i react-router-dom
