@@ -1,0 +1,57 @@
+@import url(./vars.css);
+.container{
+    max-width: 120rem;
+    height: 8vh;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+}
+
+.top-bar{
+background-color: var(--primary-color);
+padding: 10px 20px 0 20px;
+}
+.hero{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 2rem  0;
+color: var(--text-color);
+}
+
+.customer-support{
+display: flex;
+align-items: center;
+gap: 1rem;
+}
+.content-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-logo{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.links{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.logo{
+    letter-spacing: -1px;
+    display: flex   ;
+}
+.logo::before{
+    content: "AGRO";
+    color: rgb(204, 20, 20);
+    cursor: pointer ;
+}
+.container-user{
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+.container-navbar{
+background-color: var(--background-color);
+}

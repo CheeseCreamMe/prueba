@@ -1,8 +1,12 @@
 :root{
+    /*
+    colores para la nav bar
+    */
     --primary-color:#151515;
-    --background-color:#f9f5f0;
-    --background-color: #445;
+    --text-color:#f9f5f0;
+    --background-color:#161514;
     --second-color:#f34c34;
+
     --full-screen-w:100vw;
     --full-screen-h:100vh;
     --primary-font: 'Montserrat', sans-serif;
