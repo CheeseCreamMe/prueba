@@ -1,57 +1,144 @@
 @import url(./vars.css);
-.container{
+
+.container {
     max-width: 120rem;
     height: 8vh;
     margin: 0 auto;
     padding: 0 20px 0 20px;
+    font-size: medium;
+    position: relative;
 }
 
-.top-bar{
-background-color: var(--primary-color);
-padding: 10px 20px 0 20px;
-}
-.hero{
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 2rem  0;
-color: var(--text-color);
+.top-bar {
+    background-color: var(--primary-color);
+    padding: 10px 20px 0 20px;
 }
 
-.customer-support{
-display: flex;
-align-items: center;
-gap: 1rem;
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    color: var(--text-color);
 }
-.content-column{
+
+.customer-support {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.content-column {
     display: flex;
     flex-direction: column;
 }
 
-.container-logo{
+.container-logo {
     display: flex;
     align-items: center;
     gap: .5rem;
+    position: absolute;
+    transform: translateX(40vw);
 }
 
-.links{
-    text-decoration: none;
-    color: var(--text-color);
-}
-.logo{
+.logo {
     letter-spacing: -1px;
-    display: flex   ;
+    display: flex;
 }
-.logo::before{
+
+.logo::before {
     content: "AGRO";
     color: rgb(204, 20, 20);
-    cursor: pointer ;
+    cursor: pointer;
 }
-.container-user{
+
+.container-user {
     display: flex;
     gap: 1rem;
     cursor: pointer;
 }
-.container-navbar{
-background-color: var(--background-color);
+
+.container-navbar {
+    background-color: var(--background-color);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar i {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.menu .links {
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.menu .links::after {
+    content: '';
+    width: 1.5rem;
+    height: 1px;
+    background-color: var(--text-color);
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.menu .links:hover::after {
+    opacity: 1;
+}
+
+.links {
+    text-decoration: none;
+    color: var(--text-color);
+}
+.search{
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 2px solid #fff;
+    border-radius: 2rem;
+    background-color: #fff;
+    height: 3.1rem;
+    overflow: hidden;
+}
+.search-im{
+outline: none;
+border: none;
+    width: 20rem;
+    font-size: 1.2rem;
+    padding: 0 2rem ;
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    border-radius: 4px;
+cursor:text;
+}
+
+.search-im::-webkit-search-cancel-button{
+    appearance: none;
+}
+
+.btn-search{
+    border: none;
+    background-color:var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 1rem;
+    cursor: pointer;
 }

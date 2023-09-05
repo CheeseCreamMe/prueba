@@ -34,14 +34,15 @@ export default function Header() {
             </div>
             <div className="container-navbar">
                 <nav className="container navbar">
-                    <Toogle />
+                    <i><Toogle /></i>
                     <ul className="menu">
+                         <NavLink text="Inicio" url="home" />
                         <NavLink text="Contactanos" url="contact" />
                         <NavLink text="Conocenos" url="about" />
-                        <NavLink text="Inicio" url="home" />
+                        <NavLink text="Productos" url="products" />
                     </ul>
                     <form className="search">
-                        <input type="search" name="buscar" id="buscar" placeholder='Buscar...' />
+                        <input className='search-im' type="search" name="buscar" id="buscar" placeholder='Buscar...' />
                         <button className='btn-search'><Search /></button>
                     </form>
                 </nav>
