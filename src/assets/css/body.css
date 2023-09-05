@@ -11,15 +11,15 @@ body {
 }
 /*estilos de la barra de navegacion */
 ::-webkit-scrollbar {
-    width: 11px;
+    width: 10px;
   }
 
   ::-webkit-scrollbar-track {
-    background: #445;
+    background: transparent;
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: #888;
+    background-color: var(--background-color);
     border-radius: 21px;
   }
 /*boton para volver ir a la parte
@@ -28,7 +28,7 @@ superior de la pagina*/
 position: fixed;
 bottom: 20px;
 right: 20px;
-background-color: rgb(209, 27, 27);
+background-color:var(--background-color);
 color: #fff;
 border-radius:50% ;
 border: none;
@@ -40,5 +40,5 @@ justify-content: center;
 align-items: center;
 }
 .scrollTop:hover{
-    background-color: rgb(15, 77, 7);
+    background-color: var(--second-color);
 }
