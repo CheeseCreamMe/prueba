@@ -24,21 +24,30 @@ body {
   }
 /*boton para volver ir a la parte
 superior de la pagina*/
-.scrollTop{
-position: fixed;
-bottom: 20px;
-right: 20px;
-background-color:var(--background-color);
-color: #fff;
-border-radius:50% ;
-border: none;
-width: 80px;
-height: 80px;
-padding: 4px;
-display: flex;
-justify-content: center;
-align-items: center;
+
+.scroll-to-top-button {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, opacity 0.3s;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 999;
 }
-.scrollTop:hover{
-    background-color: var(--second-color);
+
+.scroll-to-top-button.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.scroll-to-top-button:hover {
+  background-color: #0056b3;
 }

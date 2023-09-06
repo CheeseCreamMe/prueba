@@ -20,7 +20,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path='inicio' element={<Home />} />
         <Route path='*' element={<NotFound />} />
       </Route>
-
     </Routes>
   </BrowserRouter>,
 )

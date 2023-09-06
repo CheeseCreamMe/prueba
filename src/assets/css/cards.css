@@ -1,0 +1,17 @@
+.card-feature>img{
+    aspect-ratio:16/9;
+    width: 100% ;
+    display: inline-block;
+}
+.card-feature{
+    position: relative;
+    text-align: center;
+    padding: 2rem 1rem ;
+    border-radius: 16px;
+    background-color:var(--text-color);
+    color: var(--primary-color);
+}
+.feature-content>span{
+display: inline-block;
+margin-bottom: 8px;
+}
