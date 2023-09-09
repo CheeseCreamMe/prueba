@@ -7,8 +7,8 @@ export function InfoCard(props ) {
         <article className="card-feature">
         <img src={props.img} alt="Card icon" />
             <div className="feature-content">
-
                 <span>{props.nombre}</span>
+                <span>{props.descripcion}</span>
                 <Btn texto={props.textoBoton}/>
             </div>
         </article>
@@ -18,7 +18,7 @@ export function InfoCard(props ) {
 export function CategorieCard(props) {
     return (
         <div className="card-categorie">
-            <img src={props.img} alt={props.imgdes} />
+            <img src={props.img} alt={props.imgdes}/>
             <p>{props.categoria}</p>
             <span>
                 <Link className='Links' to={props.url}>
