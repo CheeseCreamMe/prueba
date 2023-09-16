@@ -1,73 +1,61 @@
 import '../css/home.css'
-import logotipo from '../images/logo.jpg'
+
 import { InfoCard, CategorieCard, CarProduct } from '../components/cards'
 import { Btn } from '../components/default'
-import cat from "../svg/cat.svg"
-import p1 from "../images/products/1.webp"
 
+//imagenes usadas para template
+import p1 from "../images/products/1.webp"
+import logotipo from '../images/logo.jpg'
+//svg usados para template
+import cat from "../svg/cat.svg"
+import contact from "../svg/contact_us.svg"
 function Home() {
     return <>
         <title>Agromachinery || Inicio</title>
         <section className="banner">
             <div className="back-filter">
                 <div className="content-banner">
-                    <img className="Logo-agromachinery" src={logotipo} alt="Logo de la empresa agromachinery" />
                     <p className="slogan">
-                        " Fortaleciendo tu Produccion"
+                        " Fortaleciendo tu Produccion "
                     </p>
-                        <Btn texto="Descubre mas"/>
+                    <Btn texto="Descubre mas" />
                 </div>
             </div>
         </section>
         <main className="main-content">
 
             <section className="container container-feactures">
-
                 <InfoCard
                     img={cat}
-                    nombre="Lorem ipsum dolor
-                     sit amet consectetur adipisicing
-                      elit. Id enim at in dolorum aliquam
-                      accusantium, placeat quae obcaecati
-                       tenetur iste magnam voluptatibus
-                       alias deleniti aliquid maxime.
-                       imilique nisi aperiam dolor!
-                    "
-                    textoBoton="Descubre"
-                    />
-                                <InfoCard
-                    img={cat}
-                    nombre="Lorem ipsum dolor
-                     sit amet consectetur adipisicing
-                      elit. Id enim at in dolorum aliquam
-                      accusantium, placeat quae obcaecati
-                       tenetur iste magnam voluptatibus
-                       alias deleniti aliquid maxime.
-                       imilique nisi aperiam dolor!"
-                       textoBoton="Ver mas.."
+                    nombre="Hola"
+                    descripcion="Lorem ipsum dolor
+                    sit amet consectetur adipisicing
+                    elit. Id enim at in dolorum aliquam!"
+                    textoBoton="Ver mas.."
                 />
-                                <InfoCard
+                <InfoCard
                     img={cat}
-                    nombre="Lorem ipsum dolor
-                     sit amet consectetur adipisicing
-                      elit. Id enim at in dolorum aliquam
-                      accusantium, placeat quae obcaecati
-                       tenetur iste magnam voluptatibus
-                       alias deleniti aliquid maxime.
-                       imilique nisi aperiam dolor!"
-                       textoBoton="Ver mas.."
-
+                    nombre="Hola"
+                    descripcion="Lorem ipsum dolor
+                    sit amet consectetur adipisicing
+                    elit. Id enim at in dolorum aliquam!"
+                    textoBoton="Ver mas.."
                 />
-                                <InfoCard
+                <InfoCard
                     img={cat}
-                    nombre="Lorem ipsum dolor
-                     sit amet consectetur adipisicing
-                      elit. Id enim at in dolorum aliquam
-                      accusantium, placeat quae obcaecati
-                       tenetur iste magnam voluptatibus
-                       alias deleniti aliquid maxime.
-                       imilique nisi aperiam dolor!"
-                       textoBoton="Ver mas.."
+                    nombre="Hola"
+                    descripcion="Lorem ipsum dolor
+                    sit amet consectetur adipisicing
+                    elit. Id enim at in dolorum aliquam!"
+                    textoBoton="Ver mas.."
+                />
+                <InfoCard
+                    img={cat}
+                    nombre="Hola"
+                    descripcion="Lorem ipsum dolor
+                    sit amet consectetur adipisicing
+                    elit. Id enim at in dolorum aliquam!"
+                    textoBoton="Ver mas.."
                 />
             </section>
             <section className="container top-categories">
@@ -76,18 +64,40 @@ function Home() {
                 </h1>
                 <div className="container-categories">
                     <CategorieCard
-                        categoria="xdd"
+                        img={cat}
+                        categoria="categoria1"
+                        descripcionCategoria="Hola que tal"
+                        textoBoton="Ver mas.."
                     />
                     <CategorieCard
-                        categoria="xdd"
-                    /> <CategorieCard
-                        categoria="xdd"
-                    /> <CategorieCard
-                        categoria="xdd"
-                    /> <CategorieCard
-                        categoria="xdd"
-                    /> <CategorieCard
-                        categoria="xdd"
+                        img={contact}
+                        categoria="categoria2"
+                        descripcionCategoria="Hola que tal"
+                        textoBoton="Ver mas.."
+                    />
+                    <CategorieCard
+                        img={cat}
+                        categoria="categoria3"
+                        descripcionCategoria="Hola que tal"
+                        textoBoton="Ver mas.."
+                    />
+                    <CategorieCard
+                        img={contact}
+                        categoria="categoria4"
+                        descripcionCategoria="Hola que tal"
+                        textoBoton="Ver mas.."
+                    />
+                    <CategorieCard
+                        img={cat}
+                        categoria="categoria5"
+                        descripcionCategoria="Hola que tal"
+                        textoBoton="Ver mas.."
+                    />
+                    <CategorieCard
+                        img={contact}
+                        categoria="categoria6"
+                        descripcionCategoria="Hola que tal"
+                        textoBoton="Ver mas.."
                     />
                 </div>
             </section>
