@@ -16,29 +16,38 @@ export function InfoCard(props) {
 
 export function CategorieCard(props) {
     return (
-        <div className="card-categorie back-filter" >
+        <div className="card-categorie " >
+            <div className="back-filter"></div>
             <div className='blur-filter'>
                 <p>
                     {props.categoria}
                 </p>
                 <Btn texto={props.textoBoton} />
             </div>
-            <img src={props.img} alt={props.descripcionImagen} className='img-categories' />
+
+            <img src={props.img} alt={props.descripcionImagen} className='img-categories ' />
 
         </div>
     )
 }
-export function CarProduct(props) {
-    return (
-        <div className="card-product">
-            <div className="container-img">
-                <img src={props.img} alt={props.imgdes} />
-                <span className="descuento">
-                    {props.oferta}
+
+export function ProductList(props) {
+    const productos = props.productos; // Debes pasar el array de productos como una prop
+
+    return <>
+       <div className='container-products'>
+            {productos.map((producto, index) => (
+                <div key={index} className="card-product">
+
+                <div className="container-img">
+                <img src={producto.img} alt={props.imgdes} />
+                <span className="discount">
+                    {producto.oferta}
                 </span>
                 <div className="button-group">
                     <span><View /></span>
                     <span><Hearth /></span>
+                    <span className="add-cart"> <BoxFill /></span>
                 </div>
             </div>
             <div className="content-card-product">
@@ -50,16 +59,21 @@ export function CarProduct(props) {
                     <span><StarEmpty /></span>
                 </div>
                 <h3>
-                    {props.nombre}
+                    {producto.nombre}
                 </h3>
-                <span className="add-car">
-                    <BoxFill />
-                </span>
-                <p className="price">
-                    ${props.precio}
-                </p>
-                <span>${props.precioOferta}</span>
+
+                <div className="price">
+                    <p>${producto.precioOferta}</p>
+                    <span>${producto.precio}</span>
+                </div>
+
             </div>
+
+                </div>
+            ))}
         </div>
-    )
+
+    </>
+
+
 }
