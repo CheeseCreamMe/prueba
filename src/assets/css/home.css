@@ -12,10 +12,6 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    /*     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 
 .content-banner {
@@ -26,15 +22,17 @@
 
 .slogan {
     color: var(--text-color);
-    font-size: 1.2rem;
+    font-size: 3rem;
     margin-bottom: .3rem;
     font-weight: 600;
 }
-.Logo-agromachinery{
+
+.Logo-agromachinery {
     margin-bottom: .3rem;
     border-radius: 10px;
 }
-.btn-more{
+
+.btn-more {
     border: none;
     background: var(--background-color);
     border-radius: 20px;
@@ -47,13 +45,94 @@
 
 
 /*main content home*/
-.main-content{
-color: var(--text-color);
+.main-content {
+    color: var(--text-color);
 }
 
-.container-feactures{
+/*features*/
+.container-feactures {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
     padding: 2rem 20px;
+}
+
+.card-feature {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+}
+
+.feature-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.feature-content span {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--primary-collor);
+}
+
+.feature-content p {
+    color: #777;
+    font-weight: 500;
+}
+
+/*Categorias*/
+
+.top-categories {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.container-categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+}
+.heading-1{
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.card-categorie {
+    position: relative;
+    border: 1px solid black;
+    height: 10rem;
+    border-radius: 16px;
+    /*eliminar contenido que sobresale del contenedor padre*/
+    overflow: hidden;
+}
+
+.blur-filter {
+    font-size: 1.9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    gap: 2rem;
+    backdrop-filter: blur(1px);
+    width: 100%;
+    height: 100%;
+}
+
+.img-categories {
+    aspect-ratio: 1/1;
+    position: absolute;
+    z-index: -1;
+    height: calc(100%-20px);
+    left: -20px;
+    top: 0;
+}
+.card-categorie p{
+    position: relative;
+    text-transform: capitalize;
+    color: #f71919;
+    font-size: 2.5;
+    font-weight: 600;
 }
