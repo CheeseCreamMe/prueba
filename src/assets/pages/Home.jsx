@@ -1,6 +1,6 @@
 import '../css/home.css'
 
-import { InfoCard, CategorieCard, CarProduct } from '../components/cards'
+import { InfoCard, CategorieCard, ProductList } from '../components/cards'
 import { Btn } from '../components/default'
 
 //imagenes usadas para template
@@ -10,16 +10,49 @@ import logotipo from '../images/logo.jpg'
 import cat from "../svg/cat.svg"
 import contact from "../svg/contact_us.svg"
 function Home() {
+    //aca iria el array de productos proporcionado por el back
+
+    const productos = [
+        {
+            nombre: "producto1",
+            oferta: 10,
+            precio: 150,
+            img:p1,
+            precioOferta:135,
+        },
+       {
+            nombre: "producto2",
+            oferta: 20,
+            precio: 150,
+            precioOferta:120,
+            img:p1,
+            imgDes:"imagen"
+        },
+        {
+            nombre: "producto3",
+            oferta: 10,
+            precio: 150,
+            precioOferta:135,
+            img:p1,
+        },
+        {
+            nombre: "producto4",
+            oferta: 10,
+            precio: 150,
+            precioOferta:135,
+            img:p1,
+        },
+    ]
+
+
     return <>
         <title>Agromachinery || Inicio</title>
         <section className="banner">
-            <div className="back-filter">
-                <div className="content-banner">
-                    <p className="slogan">
-                        " Fortaleciendo tu Produccion "
-                    </p>
-                    <Btn texto="Descubre mas" />
-                </div>
+            <div className="content-banner">
+                <p className="slogan">
+                    " Fortaleciendo tu Produccion "
+                </p>
+                <Btn texto="Descubre mas" />
             </div>
         </section>
         <main className="main-content">
@@ -81,24 +114,6 @@ function Home() {
                         descripcionCategoria="Hola que tal"
                         textoBoton="Ver mas.."
                     />
-                    <CategorieCard
-                        img={contact}
-                        categoria="categoria4"
-                        descripcionCategoria="Hola que tal"
-                        textoBoton="Ver mas.."
-                    />
-                    <CategorieCard
-                        img={cat}
-                        categoria="categoria5"
-                        descripcionCategoria="Hola que tal"
-                        textoBoton="Ver mas.."
-                    />
-                    <CategorieCard
-                        img={contact}
-                        categoria="categoria6"
-                        descripcionCategoria="Hola que tal"
-                        textoBoton="Ver mas.."
-                    />
                 </div>
             </section>
 
@@ -111,27 +126,9 @@ function Home() {
                     <span>Mas Recientes</span>
                     <span>Mejor Vendidos</span>
                 </div>
-                <div className="container-products">
-                    <CarProduct
-                        precio="150"
-                        oferta="10%"
-                        precioOferta="140"
-                        img={p1}
-                        imgdes="xdd"
-                    >
-                    </CarProduct>
-                </div>
-                <div className="container-products">
-                    <CarProduct
-                        precio="150"
-                        oferta="10%"
-                        precioOferta="140"
-                        img={p1}
-                        imgdes="xdd"
-                    >
-                    </CarProduct>
-                </div>
+                <ProductList productos={productos} />
             </section>
+
         </main>
     </>
 }
